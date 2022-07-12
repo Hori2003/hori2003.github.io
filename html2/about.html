@@ -1,0 +1,172 @@
+
+<html>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap');
+
+body{
+  font-family: 'IBM Plex Mono';
+  line-height: 1.5;
+  background-color: #F4E0FD;
+  width: 400px;
+  margin: auto;
+  color: black;
+}
+
+form{
+  background: rgb(0, 0, 0, 0, 0.1);
+  padding: 2.4rem 2.4rem;
+  border-radius: 1rem;
+  width: 450px;
+  margin: auto;
+}
+
+.submit-button{
+  width: 100%;
+  padding: 0.75rem;
+  background: grey;
+  color: black;
+  border-radius: 1rem;
+  cursor: pointer;
+  
+  nav{
+    height: 58px;
+    background-color: black;
+    text-align:center; 
+  }
+  
+  nav ul{
+    list-style:none;
+  }
+  nav li {
+     display: inline-block;
+     text-align:center; 
+  }
+  nav ul li a{
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding: 0px 40px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 58px;
+    height: 58px;
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
+  
+  nav ul li a:hover{
+    background-color: #F4E0FD;
+    border-radius: 6px;
+    height: 58px;
+  }
+  
+  navbar2 {
+    height: 58px;
+    background-color: black;
+    text-align:center; 
+  }
+  
+  navbar2 ul{
+    list-style:none;
+  }
+  navbar2 li {
+     display: inline-block;
+     text-align:center; 
+  }
+  navbar2 ul li a{
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding: 0px 40px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 58px;
+    height: 58px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+}
+    </style>
+    <nav role='navigation'>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pictures.html">More on Korea </a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>  
+
+    <Header>
+  <h1 id="title"> About this page </h1>
+    </Header>
+    <body>
+  <p id="description">Answer these questions for more information about future trips to Korea </p>
+  
+  <form id="survey-form">
+    <div class="input-headings">
+    <label for="name" id="name-label"> Name: </label> 
+    <input id="name" type="text" name="name" placeholder="Please type your name" required </input>
+    <br>
+    <label for="email" id="email-label"> Email: </label> 
+    <input id="email" type="email" placeholder ="Enter your email" required> </input>
+    <br>
+    <label for="number" id="number-label"> Age: </label> 
+    <input id="number" type="number" name="number" placeholder="18" min="13" max="95" required </input>
+    <br>
+  
+    
+    <label for="dropdown" id="model"> Select Model </label>
+    <select id="dropdown">
+      <option value="Model_a" Model a </option>
+      <option value="Model_b" Model b </option>
+      <option value="Model_c" Model c </option>
+      <option value="Model_d" Model d </option>
+      <option value="Model_f" Model f </option>
+    </select>
+    <br>
+    <br>
+  
+  <label for="model_color" id="model_color"> <b> Would you like to go to Korea?: </b> </label>
+  <br>
+  <input id="model_color" type="radio" id="gray" name="color" value="gray">
+  <label for="model_color"> Yes </label>
+  <br>
+  <input id="model_color" type="radio" id="gold" name="color" value="gold">
+  <label for="model_color"> No </label>
+  <br>
+  <input id="model_color" type="radio" id="blue" name="color" value="blue">
+  <label for="model_color"> Unsure </label>
+  <br>
+  <br>
+  <label for="extras"> <b> How did you find this website?: </b> </br> </label>
+  <br>
+  <input id="checkbox" type="checkbox" name="extras" value="waterproof">
+  <label for="checkbox"> Google Search </label>
+  <br>
+  <input id="checkbox" type="checkbox" name="extras" value="screenprotector">
+  <label for="checkbox"> Ad </label>
+  <br>
+  <input id="checkbox" type="checkbox" name="extras" value="phonecase">
+  <label for="checkbox"> Not included here </label>
+  <br>
+  <br>
+  
+  <label id="textarea"> Additional Comments: </label>
+  <br>
+  <textarea id="textarea" name="instructions" rows="5" cols="40">
+  </textarea>
+  <br>
+  
+  <input id="submit" type="submit" value="Enter" class="submit-button">
+  
+      </div>
+      <br>
+      <a href="/about/about_team.htm">Email</a>
+      <a href="/about/about_team.htm"> Instagram</a>
+      <a href="/about/about_team.htm">Call</a>
+      <br>
+  </form>
+  </body>
+  </html>

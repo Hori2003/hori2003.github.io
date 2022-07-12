@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans:300,400');
+
+body, html {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 4.5rem;
+  letter-spacing: 0.5rem;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+a {
+  color:#5bc0de;
+}
+
+a:hover {
+  color: #31b0d5;
+  text-decoration: none;
+}
+
+#hm {
+  min-height: 100%;
+}
+
+.heading {
+  color: #FFF;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  width: 100%;
+}
+
+.middle {
+  color: #FFF;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  width: 100%;
+}
+
+.img1 {
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2VvdWx8ZW58MHx8MHx8&w=1000&q=80');
+}
+
+.bg-img2 {
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('https://static.onedaykorea.com/wp-content/uploads/2014/09/150A28494EF1EBD4147CFE.gif');
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 100%;
+  position: relative;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 850px;
+}
+
+.card {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .parallax {background-attachment: scroll;}
+  .heading {top: 30%;} 
+  .middle {top: 15%;}
+}
+
+
+nav{
+    height: 58px;
+    background-color: black;
+    text-align:center; 
+  }
+  
+  nav ul{
+    list-style:none;
+  }
+  nav li {
+     display: inline-block;
+     text-align:center; 
+  }
+  nav ul li a{
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding: 0px 40px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 58px;
+    height: 58px;
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
+  
+  nav ul li a:hover{
+    background-color: #F4E0FD;
+    border-radius: 6px;
+    height: 58px;
+  }
+  
+  navbar2 {
+    height: 58px;
+    background-color: black;
+    text-align:center; 
+  }
+  
+  navbar2 ul{
+    list-style:none;
+  }
+  navbar2 li {
+     display: inline-block;
+     text-align:center; 
+  }
+  navbar2 ul li a{
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding: 0px 40px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 58px;
+    height: 58px;
+    font-family: 'Courier New', Courier, monospace;
+  }

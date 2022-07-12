@@ -1,172 +1,102 @@
-
+<!DOCTYPE html>
 <html>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap');
-
-body{
-  font-family: 'IBM Plex Mono';
-  line-height: 1.5;
-  background-color: #F4E0FD;
-  width: 400px;
-  margin: auto;
-  color: black;
-}
-
-form{
-  background: rgb(0, 0, 0, 0, 0.1);
-  padding: 2.4rem 2.4rem;
-  border-radius: 1rem;
-  width: 450px;
-  margin: auto;
-}
-
-.submit-button{
-  width: 100%;
-  padding: 0.75rem;
-  background: grey;
-  color: black;
-  border-radius: 1rem;
-  cursor: pointer;
-  
-  nav{
-    height: 58px;
-    background-color: black;
-    text-align:center; 
-  }
-  
-  nav ul{
-    list-style:none;
-  }
-  nav li {
-     display: inline-block;
-     text-align:center; 
-  }
-  nav ul li a{
-    display: inline-block;
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-    padding: 0px 40px;
-    font-size: 17px;
-    text-align: center;
-    line-height: 58px;
-    height: 58px;
-    font-family: 'Courier New', Courier, monospace;
-    
-  }
-  
-  nav ul li a:hover{
-    background-color: #F4E0FD;
-    border-radius: 6px;
-    height: 58px;
-  }
-  
-  navbar2 {
-    height: 58px;
-    background-color: black;
-    text-align:center; 
-  }
-  
-  navbar2 ul{
-    list-style:none;
-  }
-  navbar2 li {
-     display: inline-block;
-     text-align:center; 
-  }
-  navbar2 ul li a{
-    display: inline-block;
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-    padding: 0px 40px;
-    font-size: 17px;
-    text-align: center;
-    line-height: 58px;
-    height: 58px;
-    font-family: 'Courier New', Courier, monospace;
-  }
-
-}
-    </style>
-    <nav role='navigation'>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="pictures.html">More on Korea </a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>  
-
-    <Header>
-  <h1 id="title"> About this page </h1>
-    </Header>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
-  <p id="description">Answer these questions for more information about future trips to Korea </p>
-  
-  <form id="survey-form">
-    <div class="input-headings">
-    <label for="name" id="name-label"> Name: </label> 
-    <input id="name" type="text" name="name" placeholder="Please type your name" required </input>
-    <br>
-    <label for="email" id="email-label"> Email: </label> 
-    <input id="email" type="email" placeholder ="Enter your email" required> </input>
-    <br>
-    <label for="number" id="number-label"> Age: </label> 
-    <input id="number" type="number" name="number" placeholder="18" min="13" max="95" required </input>
-    <br>
-  
-    
-    <label for="dropdown" id="model"> Select Model </label>
-    <select id="dropdown">
-      <option value="Model_a" Model a </option>
-      <option value="Model_b" Model b </option>
-      <option value="Model_c" Model c </option>
-      <option value="Model_d" Model d </option>
-      <option value="Model_f" Model f </option>
-    </select>
-    <br>
-    <br>
-  
-  <label for="model_color" id="model_color"> <b> Would you like to go to Korea?: </b> </label>
-  <br>
-  <input id="model_color" type="radio" id="gray" name="color" value="gray">
-  <label for="model_color"> Yes </label>
-  <br>
-  <input id="model_color" type="radio" id="gold" name="color" value="gold">
-  <label for="model_color"> No </label>
-  <br>
-  <input id="model_color" type="radio" id="blue" name="color" value="blue">
-  <label for="model_color"> Unsure </label>
-  <br>
-  <br>
-  <label for="extras"> <b> How did you find this website?: </b> </br> </label>
-  <br>
-  <input id="checkbox" type="checkbox" name="extras" value="waterproof">
-  <label for="checkbox"> Google Search </label>
-  <br>
-  <input id="checkbox" type="checkbox" name="extras" value="screenprotector">
-  <label for="checkbox"> Ad </label>
-  <br>
-  <input id="checkbox" type="checkbox" name="extras" value="phonecase">
-  <label for="checkbox"> Not included here </label>
-  <br>
-  <br>
-  
-  <label id="textarea"> Additional Comments: </label>
-  <br>
-  <textarea id="textarea" name="instructions" rows="5" cols="40">
-  </textarea>
-  <br>
-  
-  <input id="submit" type="submit" value="Enter" class="submit-button">
-  
-      </div>
-      <br>
-      <a href="/about/about_team.htm">Email</a>
-      <a href="/about/about_team.htm"> Instagram</a>
-      <a href="/about/about_team.htm">Call</a>
-      <br>
-  </form>
-  </body>
-  </html>
+        <nav role='navigation'>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="pictures.html">More on Korea </a></li>
+            </ul>
+          </nav>  
+
+          <div class=" parallax img1">
+            <div class="heading text-center">
+              <h2>Travel to</h2>
+              <h1 class="text-uppercase">South Korea</h1>
+            </div>
+          </div>
+          
+          <div class=" box1" id="hm">
+            <div class="container">
+              <div class="box2">
+                <div class="col1">
+                  <img src="https://wwwnc.cdc.gov/travel/images/map-republic-of-korea.png" class="img-fluid rounded-circle mx-auto d-block" style="max-width: 350px; height: 300px" alt="Map of South Korea">
+                </div>
+              </div>
+              <div class="col2">
+                <p class="text-center lead">This is a map of South Korea and some of its major cities. It is a famous place known due to its rich history and There are more cities and popular activites to do if you scroll down below.</p>
+              </div>
+              <div class="box2">
+                <div class="col1">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3013/3013996.png" class="img-fluid mx-auto d-block" style="max-width: 350px" alt="LOGO1">
+                </div>
+              </div>
+            </div>
+          </div>  
+          
+          <div class=" parallax bg-img2">
+            <div class="middle">
+              <div class="container" style="max-width: 550px">
+                <blockquote class="text-center">
+                  <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
+                  <p class="mb-1 lead">This amusement park is called Lotte World and is located in Seoul, South Korea. Visitors are welcomed year round. The park opens from  9:30 a.m. until 10 p.m. daily, and costs 36,000 won(~$32) and 29,000 won(~$26) for admission only; One-day passes are separetely sold. Among teenager and younger Koreas, you can also rent uniforms to take pictures in from of the carousel, or any other likeable place.</p>
+                  <footer class="blockquote-footer text-uppercase text-white">Visit Today!</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="class 1">
+            <!-- first row -->
+            <div class="deck">
+              <div class="card">
+                <figure>
+                <img class="image" src="https://ik.imagekit.io/tvlk/blog/2020/02/Gyeongbokgung-Palace-Seoul-Korea.jpg?tr=dpr-2,w-675.jpg" alt="Spring" width="600" height="380">
+                <figcaption>Spring in Gyeongbokgung Palace </figcaption>
+              </figure>
+                <div class="chunk">
+                  <h4 class="title">Gyeongbokgung Palace <small class="text-muted">(1395)</small></h4>
+                  <p class="text">This palace is one of five located in Seoul. It was the main palace during the Josean dynasty. It is the first and largest palace built during this dynasty, representing the sovereignty it. The palace Hours vary by season, but it is typically open from 9 a.m. to 17:00/ 18:30. Admission is 3,000 won (~$2.69) for adults and 1,500 won (~ $1.35) for visitors age 7 to 18. You can also rent hanboks or other outfits to wear for photoshoots. (From <a href="https://en.wikipedia.org/wiki/Gyeongbokgung" target="_blank" class="card-link"><cite>Wikipedia</cite></a>)</p>
+                </div>
+                <div class="footer">
+                  <a href="https://english.visitkorea.or.kr/enu/ATR/SI_EN_3_1_1_1.jsp?cid=264337" target="_blank" class="card-link">More information</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="image" src="https://media.istockphoto.com/photos/seoul-nightlife-picture-id459239459?k=20&m=459239459&s=612x612&w=0&h=l8k8FQ5DUtac7KZ263dk2kWhVx5YeulMFovM12a84pI=" alt="Myeongdong Shopping Street" width="600" height="380">
+                <div class="chunk">
+                  <h4 class="title">Myeongdong Shopping Street 
+                  <p class="text">This shopping street is one of, if not the most famous street/neighborhood in Seoul. Stores generally open from 11:00 to 22:00, and there are also night market stalls where you can get food, sweets, skincare products, etc. (From <a href="https://local-insider.com/myeongdong-shopping-guide-detailed-tips-to-enjoy-a-shopping-spree-in-the-most-vibrant-shopping-street-in-seoul/" target="_blank" class="card-link"><cite>Local Insider</cite></a>)</p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- second row -->
+            <div class="card-row-2">
+              <div class="card">
+                <img class="image" src="https://data.whicdn.com/images/58960422/original.gif" alt="Han River">
+                <div class="chunk">
+                  <h4 class="title"> Han River</h4>
+                  <p class="text"> The Han River is located in Northern South Korea and goes through Seoul. Some activites you can do here are boat tours, yacht rides, jet skiing, etc. Many locals also have picnics because of the nice scenary and vibe. Bike rides are another common activity in this area. It is easy to get there through public transportation as well making it a desireable place to go to. ( <a href="https://blog.waug.com/han-river/" target="_blank" class="card-link"><cite>Other Activities</cite></a>)</p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://en.wikipedia.org/wiki/Han_River_(Korea)" target="_blank" class="card-link">More geological information</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="image" src="https://pm1.narvii.com/7873/de7d848ca5f99b7bed0029d0f29b404d4161b748r1-700-933v2_hq.jpg" alt="HYBE Building" width="350" height="500">
+                <div class="chunk">
+                  <h4 class="title">HYBE Building <small class="text-muted">(2021)</small></h4>
+                  <p class="text">This building is an entertainment company's build of many popular kpop groups such as BTS and TXT. It is 19 stories, alongside 7 underground floors. The building contains a museum on levels B1 and B2 that contain many of its artists' achievements. You can buy tickets on the online website through Weverse. Tickets are 22,000won(~$20). They also have a museum shop where you can buy souvenirs or other products. (<a href="https://hybecorp.com/eng/main#" target="_blank" class="card-link"><cite>Link to their website</cite></a>)</p>
+                </div>
+                <br>
+              </br>
+                </div>
+              </div>
+            </div>
+    </body>
+</html>

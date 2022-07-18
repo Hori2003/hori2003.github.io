@@ -1,0 +1,81 @@
+
+<!DOCTYPE HTML>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+</style>
+</head>
+<html>
+	<title>My Assignment 4 P1</title>
+
+	<script>
+		function openfirstmodal()
+		{
+			document.getElementById("container").style.pointerEvents = "none";
+			document.getElementById("firstmodal").style.opacity = 1;
+			document.getElementById("firstmodal").style.pointerEvents = "auto";
+		}
+        <!-- this function opens the button for the modal container. i used this website https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById for help -->
+		function closefirstwindow()
+		{
+			document.getElementById("firstmodal").style.pointerEvents = "none";
+			document.getElementById("firstmodal").style.opacity = 0;
+			document.getElementById("container").style.pointerEvents = "auto";
+		}
+        <!--https://www.w3schools.com/howto/howto_css_modals.asp I used this for the close button -->
+		function opensecondmodal()
+		{
+			document.getElementById("container").style.pointerEvents = "none";
+			document.getElementById("secondmodal").style.opacity = 1;
+			document.getElementById("secondmodal").style.pointerEvents = "auto";	
+		}
+		function closesecondwindow()
+		{
+			document.getElementById("secondmodal").style.pointerEvents = "none";
+			document.getElementById("secondmodal").style.opacity = 0;
+			document.getElementById("container").style.pointerEvents = "auto";
+		
+		}
+	</script>
+	
+	<body>
+		<div id = "container">
+			<div class = "card">
+				<figure>
+					<img src = "https://64.media.tumblr.com/e0549f8e2e8e8523aee7eac097783079/tumblr_p101lxSeKK1vjjdneo1_500.gifv" /> <br>
+					<figcaption>Description of the first product</figcaption>
+				</figure>
+				<button onclick = "openfirstmodal();">First Modal</button>
+			</div>
+			<div class = "card">
+				<figure>
+					<img src = "https://pa1.narvii.com/6222/3104f94be374307573bf0e2721dbe127dad14fd4_hq.gif" /> <br>
+					<figcaption>Description of the second product</figcaption>
+				</figure>
+				<button onclick = "opensecondmodal();">second modal</button>
+			</div>
+		</div>
+		
+		<div id = "firstmodal">
+			<div id = "firstwindow">
+				<div class = "top">
+					<span>Modal Window Example</span>
+					<button onclick = "closefirstwindow();">X</button>
+				</div>
+				<p>This is a message in the modal window.This is a message in the modal window.This is a message in the modal window.</p> 	
+				<img src = "https://data.whicdn.com/images/283787102/original.gif" />
+			</div>
+		</div>
+		<div id = "secondmodal">
+			<div id = "window2">
+				<div class = "top">
+					<span>Modal Window Example</span>
+					<button onclick = "closesecondwindow();">X</button>
+				</div>
+				<p>This is a message in the modal window.This is a message in the modal window.This is a message in the modal window.</p> 	
+				<img src = "https://i.pinimg.com/474x/a6/e2/cb/a6e2cbaab57449b6fc1ecf8de6459c14.jpg" />
+			</div>
+		</div>
+	</body>
+</html>
